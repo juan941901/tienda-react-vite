@@ -1,6 +1,8 @@
 //Librerias
 import {useRoutes,BrowserRouter} from 'react-router-dom';
 //Componentes
+import {Navbar} from '../../Components/Navbar'
+//Paginas
 import {Home} from '../Home';
 import {MyAccount} from '../MyAccount';
 import {MyOrder} from '../MyOrder';
@@ -32,6 +34,7 @@ function App() {
     <>
       <BrowserRouter>
         <AppRoutes />
+        <Navbar />
       </BrowserRouter>
     </>
   );
