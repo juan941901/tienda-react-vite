@@ -2,6 +2,7 @@
 import {useRoutes,BrowserRouter} from 'react-router-dom';
 //Componentes
 import {Navbar} from '../../Components/Navbar'
+import { ShoppingCartProvider } from '../../Context'
 //Paginas
 import {Home} from '../Home';
 import {MyAccount} from '../MyAccount';
@@ -32,11 +33,12 @@ function App() {
 
   return (
     <>
+    <ShoppingCartProvider>
       <BrowserRouter>
-        
         <AppRoutes />
         <Navbar />
       </BrowserRouter>
+    </ShoppingCartProvider>
     </>
   );
 }
