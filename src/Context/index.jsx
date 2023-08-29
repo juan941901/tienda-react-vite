@@ -1,10 +1,11 @@
 import { createContext,useState } from 'react';
 
-const ShoppingCartContext = createContext();
+export const ShoppingCartContext = createContext();
 
-const [count,setCount] = useState(0);
 
 export const ShoppingCartProvider = ({children}) => {
+    
+    const [count,setCount] = useState(0);
 
     return (
 
